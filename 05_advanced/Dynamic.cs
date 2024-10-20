@@ -1,27 +1,29 @@
 using System;
-
-class Base
+public class Base
 {
-    public virtual void DoIt()
+    public void DoIt()
     {
-        Console.WriteLine("Base.DoIt()");
+        Console.WriteLine("Base");
     }
 }
 
-class Derived : Base
+public class Derived : Base
 {
-    public new void DoIt()
+    public void DoIt()
     {
-        Console.WriteLine("Derived.DoIt()");
+        Console.WriteLine("Derived");
     }
 }
 
-public class Dynamic {
+
+class Dynamic {
   static void Main() {
-    Base b = new Derived();
+    Base b = new Base();
     Derived d = new Derived();
+    Base bd = new Derived();
     
-    b.DoIt(); // Calls Base.DoIt
-    d.DoIt(); // Calls Derived.DoIt
-  }
+    b.DoIt();
+    d.DoIt();
+    bd.DoIt();
+    }
 }
