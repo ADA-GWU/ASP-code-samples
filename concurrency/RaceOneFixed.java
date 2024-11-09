@@ -1,7 +1,7 @@
 class RaceThread extends Thread {
 	public static int count;
 
-	static void increment() {
+	static synchronized void increment() {
 		int temp = count;
 		temp = temp + 1;
 		count = temp;
@@ -13,7 +13,7 @@ class RaceThread extends Thread {
 	}
 }
 
-public class RaceOne {
+public class RaceOneFixed {
 	public static void main(String[] args) {
 		RaceThread.count = 0;
 
