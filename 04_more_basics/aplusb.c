@@ -9,7 +9,7 @@ int sumof(int a, int b) {
 }
 
 int main() {
-   int a = 6;
+   int a = 5;
    int b = 10;
 
    printf("Result: %d\n",sumof(a,b));

@@ -7,9 +7,10 @@ public class ExceptionSample {
 		catch (Exception ex) {
 			System.out.println("General Ex: "+ex);
 		}
-		// catch (ArrayIndexOutOfBoundsException aex) {
-		// 	System.out.println("AoB Ex: "+aex);
-		// }
+		catch (ArrayIndexOutOfBoundsException aex) {
+		 	System.out.println("AoB Ex: "+aex);
+		}
+
 		//Try to put catch(Exception ex) first
 	}
 }

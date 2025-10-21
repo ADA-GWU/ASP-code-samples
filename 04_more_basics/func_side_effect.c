@@ -8,7 +8,7 @@ int fun1() {
 } 
 
 int main() {
-  a = a + fun1();
-  //a = fun1() + a;
+  //a = a + fun1();
+  a = fun1() + a;
   printf("%d\n",a);
 }
